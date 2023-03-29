@@ -1,0 +1,105 @@
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  float: left;
+
+
+  font-family: Garamond;
+
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #F9E4D4;
+  color: #282135;
+  border: 2px solid #FBE4D4;
+  border-radius: 7px;
+}
+
+.button1:hover {
+  background-color: #fff6f6;
+  color: #282135;
+}
+.button2 {
+  background-color: #f89fb2;
+  color: #282135;
+  border: 2px solid #f89fb2;
+  border-radius: 7px;
+}
+
+.button2:hover {
+  background-color: #ffd6d6;
+  color: #282135;
+}
+input[type=text] {
+  width:250px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff6f6;
+  color: #282135;
+}
+input[type=text]:focus {
+  background-color: #ffd6d6;
+}
+
+input[type=email] {
+  width:250px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff6f6;
+  color: #282135;
+}
+input[type=email]:focus {
+  background-color: #ffd6d6;
+}
+
+input[type=password] {
+  width:250px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff6f6;
+  color: #282135;
+}
+input[type=password]:focus {
+  background-color: #ffd6d6;
+}
+
+input[type=date] {
+  width:250px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #fff6f6;
+  color: #282135;
+}
+input[type=date]:focus {
+  background-color: #ffd6d6;
+}
+
+.center {
+position: absolute;
+top: 25%;
+width: 100%;
+text-align: center;
+font-family:Garamond;
+font-size: 18px;
+color: #F9E4D4;
+
+z-index: 2;
+}
+.sidebar{
+position:absolute;
+color: #282135;
+top:0%;
+left:0%;
+background-color: #F9E4D4;
+border: 6px double;
+border-color:#282135;
+z-index: 1;
+}
