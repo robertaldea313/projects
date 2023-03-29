@@ -1,0 +1,57 @@
+<title>
+	register
+</title>
+<head>
+<link rel="stylesheet" href="design.css">
+<style>
+
+.square{
+	position:absolute;
+	top:0%;
+	left:30%;
+	height: 100%;
+	width:40%;
+	background-color: #282135;
+	border: 6px double;
+	border-color:#F9E4D4;;
+	z-index: 1;
+}
+</style>
+
+</head>
+
+<body style ="background-color: #F9E4D4; overflow:hidden" scroll="no"">
+<p>
+	<div class="square"></div>
+	<center class ="center">
+		<b>
+		<div style="font-family:papyrus; font-size:50">Register</div>
+		<form METHOD = POST ACTION ="http://localhost/register.php">
+		<label for="cfName">First Name:</label><br>
+  	<input type="text" id="cfName" name="cfName" placeholder="Your first name.." required><br>
+
+  	<label for="clName">Last Name:</label><br>
+ 	 	<input type="text" id="clName" name="clName" placeholder="Your last name.." required><br>
+
+		<label for="eAdress">Email Address:</label><br>
+		<input type="email" id="eAdress" name="eAdress" placeholder="Your email address.." required><br>
+
+		<label for="pNumber">Phone Number:</label><br>
+		<input type="text" id="pNumber" name="pNumber" placeholder="Your phone number.." pattern="[+0-9]{10,}" required><br>
+
+		<label for="cPass">Password:</label><br>
+		<input type="password" id="cPass" name="cPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  	title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="A-Z, a-z and 0-9 required.." required><br>
+
+		<label for="fromW">From When:</label><br>
+		<input type="date" id="fromW" name="fromW" min="2022-05-15" max="2023-05-15" required><br>
+
+		<label for="toW">To When:</label><br>
+		<input type="date" id="toW" name="toW" min="2022-05-15" max="2023-05-15" required><br>
+
+		<input class="button1" style="width:75px; height:40px;" type="reset" value="Reset">
+		<input class="button2" style="width:150px; height:40px;" type="submit" value="Submit">
+		</b>
+	</center></form>
+</p>
+</body>
